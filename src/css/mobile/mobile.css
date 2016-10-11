@@ -1,0 +1,199 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 1vh;
+  background-color: black;
+  color: white;
+  font-family: Helvetica;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+
+  .cyrcle_operator_wifi {
+    flex-grow: 1.6;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+
+    .cyrcle {
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: inline-block;
+
+      &:nth-child(2) {
+        margin: 0 0.1em;
+      }
+
+      &:nth-child(4) {
+        margin: 0 0.1em;
+      }
+
+      &:last-child {
+        background: white;
+      }
+    }
+  }
+
+  .mobile_operator {
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    margin: 0 0.3em;
+  }
+
+  .wifi {
+    display: inline-block;
+
+    img {
+      width: 37px;
+    }
+  }
+
+  .time {
+    flex-grow: 1;
+    text-align: center;
+
+    #time {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+
+  .battery {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1em;
+
+    .battery_percent {
+      display: inline-block;
+      margin-right: 0.8em;
+
+      img {
+        display: inline-block;
+        height: 40px;
+        color: white;
+      }
+    }
+
+    .battery_icons {
+      display: inline-block;
+
+      img {
+        display: inline-block;
+        height: 25px;
+        color: green;
+      }
+    }
+  }
+}
+
+.person {
+  margin-top: 13vh;
+
+  .name {
+    text-align: center;
+    font-size: 5.5vh;
+  }
+
+  .skils {
+    font-size: 2vh;
+    text-align: center;
+  }
+}
+
+.btns {
+  margin-top: 26vh;
+  margin-left: 10vw;
+  background: white;
+  position: relative;
+
+  .main_btn {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 50%;
+  }
+
+  /* .main_btn:hover {} */
+
+  .draw_btn {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 5px;
+    bottom: -195px;
+    background: white;
+    border-radius: 50%;
+
+    .graphic_btn,
+    .pixelmator_btn,
+    .sketch_btn {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      background: white;
+      border-radius: 50%;
+      left: 10px;
+      top: 10px;
+    }
+  }
+
+  .code_btn {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background: white;
+    border-radius: 50%;
+
+    .atom_btn,
+    .mamp_btn {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      background: white;
+      border-radius: 50%;
+      left: 10px;
+      top: 10px;
+    }
+  }
+
+  .hobbies_btn {
+    position: absolute;
+    width: 189px;
+    height: 189px;
+    left: 5px;
+    bottom: -195px;
+    background: white;
+    border-radius: 50%;
+
+    .books_btn,
+    .music_btn,
+    .movies_btn {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      background: white;
+      border-radius: 50%;
+      left: 10px;
+      top: 10px;
+    }
+  }
+}
